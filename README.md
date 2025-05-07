@@ -9,6 +9,6 @@ Original dataset can be found here: https://archive.ics.uci.edu/dataset/256/dail
 
 To process the data, run the getNumpyData.py file to output NumPy files containing original and normalized training and testing data as well as target labels. This is also included directly in the numpy_data folder. This data can then be used for training.
 
-The training process can be found in Training.ipynb. The files from numpy_data must be included to run the file. The notebook will create some trained models, which are also included in the trained_models folder to avoid the long process of training.
+The training process can be found in Training.ipynb. The files from numpy_data must be included to run the file. The notebook will create some trained models, which are also included in the trained_models folder to avoid the long process of training. Note that much of this training file has code that was developed by researchers from a paper by Zhang et al. 2024, which can be found here: https://proceedings.mlr.press/v248/zhang24a.html. Their original code and repository can be found here: https://github.com/Oceanjinghai/HealthTimeSerial.
 
 Evaluation takes place in MetricsEvaluation.ipynb. It is necessary to use the models from Training.ipynb or the models provided in trained_models for evaluation. We simply output various metrics related to multiclass classification such as accuracy, weighted f1 score, weighted precision, and weighted recall. We also analyze the training and validation accuracy during the training process.
